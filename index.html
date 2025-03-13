@@ -15,19 +15,22 @@
       </header>
 
       <main>
-        <form id="recipe-generator-form">
-          <input
-            type="text"
-            placeholder="Enter the type of meal you would like to make..."
-            autofocus
-            required
-            autocomplete="off"
-            class="instructions"
-            id="user-instructions"
-          />
-          <input type="submit" class="submit-button" />
-        </form>
-        <div class="recipe" id="recipe"></div>
+        <div class="form-container">
+          <form id="recipe-generator-form">
+            <input
+              type="text"
+              placeholder="Enter the type of dish you would like to make..."
+              autofocus
+              required
+              autocomplete="off"
+              class="instructions"
+              id="user-instructions"
+            />
+            <input type="submit" class="submit-button" />
+          </form>
+          <div class="hint">i.e: Breakfast, Vegetarian, Rice, etc.</div>
+        </div>
+        <div class="recipe hidden loader" id="recipe"></div>
       </main>
 
       <footer>
